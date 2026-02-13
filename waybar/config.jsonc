@@ -3,7 +3,7 @@
 	"reload_style_on_change": true,
 	"modules-left": ["custom/launcher","cpu","memory","tray"],
 	"modules-center": ["hyprland/workspaces"],
-	"modules-right": ["custom/wallpaper","network","wireplumber","clock","custom/power"],
+	"modules-right": ["custom/wallpaper","group/connections","wireplumber","clock","custom/power"],
 	
 	"hyprland/workspaces": {
 		"persistent-workspaces": {
@@ -12,7 +12,8 @@
 	},
 
 	"wireplumber": {
-		"tooltip": false,
+		"tooltip": true,
+		"tooltip-format": "{node_name}",
 		"scroll-step": 5,
 		"format": "{icon}  {volume}%",
 		"format-muted": "{icon}  {volume}%",
@@ -21,11 +22,27 @@
 			"default": ["", "", ""]
 		}
 	},
-	"network": {
-		"tooltip": false,
-		"format-wifi": "  {essid}",
-		"format-ethernet": ""
+
+	"group/connections" : {
+		"orientation": "horizontal",
+		"modules": [
+			"network",
+			"bluetooth"
+		]
 	},
+
+		"network": {
+			"tooltip": true,
+			"tooltip-format": "{essid} [{signalStrength}%]",
+			"format-wifi": "<span color='#a3be8c'>   </span>",
+			"format-disconnected": "<span color='#bf616a'>   </span>",
+			"format-ethernet": ""
+		},
+		"bluetooth": {
+			"format-on": "<span color='#5e81ac'> </span>",
+			"format-off": "<span color='#bf616a'> </span>"
+		},
+
 	"tray": {
 		"icon-size": 18,
 		"spacing": 10
@@ -34,15 +51,15 @@
         	"format": " {:%H:%M  %d/%m/%Y}",
 		"tooltip-format": "{calendar}",
 		"calendar": {
-			"mode"			: "year",
+			"mode"			: "month",
 			"mode-mon-col"		: 3,
 			"weeks-pos"		: "right",
 			"format": {
-                              "months":     "<span color='#ffead3'><b>{}</b></span>",
-                              "days":       "<span color='#ecc6d9'><b>{}</b></span>",
-                              "weeks":      "<span color='#99ffdd'><b>W{}</b></span>",
-                              "weekdays":   "<span color='#ffcc66'><b>{}</b></span>",
-                              "today":      "<span color='#ff6699'><b><u>{}</u></b></span>"
+                              "months":     "<span color='#ebcb8b'><b>{}</b></span>",
+                              "days":       "<span color='#b48ead'><b>{}</b></span>",
+                              "weeks":      "<span color='#88c0d0'><b>W{}</b></span>",
+                              "weekdays":   "<span color='#d08770'><b>{}</b></span>",
+                              "today":      "<span color='#bf616a'><b><u>{}</u></b></span>"
                               }
 		}
     	},
@@ -70,6 +87,7 @@
         	"on-click": "rofi -show p -modi p:rofi-power-menu "
     	},
      	"custom/wallpaper":{
+		"tooltip": false,
         	"format":" ",
         	"on-click": "waypaper"
     	}
