@@ -34,13 +34,13 @@
 		"network": {
 			"tooltip": true,
 			"tooltip-format": "{essid} [{signalStrength}%]",
-			"format-wifi": "<span color='#a3be8c'>   </span>",
-			"format-disconnected": "<span color='#bf616a'>   </span>",
+			"format-wifi": "<span color='#a3be8c'> </span>",
+			"format-disconnected": "<span color='#bf616a'> </span>",
 			"format-ethernet": ""
 		},
 		"bluetooth": {
-			"format-on": "<span color='#5e81ac'> </span>",
-			"format-off": "<span color='#bf616a'> </span>"
+			"format-on": "<span color='#5e81ac'></span>",
+			"format-off": "<span color='#bf616a'></span>"
 		},
 
 	"tray": {

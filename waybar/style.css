@@ -71,6 +71,16 @@ window#waybar.hidden {
     color: #E8A2AF;
 }
 
+#bluetooth {
+	margin-left: 5px;
+	margin-right: 1px;
+}
+
+#network {
+	margin-left: 1px;
+	margin-right: 5px;
+}
+
 #connections {
 	margin-top: 6px;
 	margin-left: 8px;
