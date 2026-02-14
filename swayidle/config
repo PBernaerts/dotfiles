@@ -1,5 +1,3 @@
-swayidle -w \\
-	timeout 300 'swaylock -f -c 000000' \\
-	timeout 600 'notify-send "output * power off"' \\
-		resume 'notify-send "output * power on"' \\
-	before-sleep 'swaylock -f -c 000000'
+timeout 1800 'swaylock -f'
+timeout 1805 'hyprctl dispatch dpms off' resume 'hyprctl dispatch dpms on'
+before-sleep 'swaylock -f'
