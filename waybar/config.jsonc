@@ -7,7 +7,7 @@
 
 	"hyprland/workspaces": {
 		"persistent-workspaces": {
-			"DP-6": 5
+			"*": 5
 		}
 	},
 
