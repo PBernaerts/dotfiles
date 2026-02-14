@@ -32,6 +32,7 @@
 	},
 
 		"network": {
+			"on-click": "nmgui",
 			"tooltip": true,
 			"tooltip-format": "{essid} [{signalStrength}%]",
 			"format-wifi": "<span color='#a3be8c'> </span>",
