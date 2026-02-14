@@ -4,7 +4,7 @@
 	"modules-left": ["custom/launcher","cpu","memory","tray"],
 	"modules-center": ["hyprland/workspaces"],
 	"modules-right": ["custom/wallpaper","group/connections","wireplumber","clock","custom/power"],
-	
+
 	"hyprland/workspaces": {
 		"persistent-workspaces": {
 			"DP-6": 5
