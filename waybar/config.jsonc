@@ -1,9 +1,20 @@
 {
 	"layer": "bottom",
 	"reload_style_on_change": true,
-	"modules-left": ["custom/launcher","cpu","memory","tray"],
-	"modules-center": ["hyprland/workspaces"],
-	"modules-right": ["custom/wallpaper","group/connections","wireplumber","clock","custom/power"],
+	"modules-left": ["custom/launcher","hyprland/workspaces","tray"],
+	"modules-center": ["wlr/taskbar"],
+	"modules-right": ["group/connections","wireplumber","clock"],
+
+
+	"wlr/taskbar": {
+		"format": "{title}",
+		"tooltip": false,
+		"ignore-list": [
+			"kitty",
+			"Signal",
+			"Proton Mail"
+		]
+	}, 
 
 	"hyprland/workspaces": {
 		"persistent-workspaces": {
@@ -49,7 +60,7 @@
 		"spacing": 10
     	},
 	"clock": {
-        	"format": " {:%H:%M  %d/%m/%Y}",
+        	"format": " {:%H:%M   %d/%m/%Y}",
 		"tooltip-format": "{calendar}",
 		"calendar": {
 			"mode"			: "month",

@@ -2,7 +2,7 @@
 	border: none;
 	border-radius: 10px;
 	font-family: "JetbrainsMono Nerd Font" ;
-	font-size: 15px;
+	font-size: 12px;
 	font-weight: 700;
 	min-height: 10px;
 }
@@ -21,7 +21,7 @@ window#waybar.hidden {
 	padding-right: 10px;
 	border-radius: 10px;
 	transition: none;
-    color: transparent;
+	color: transparent;
 	background: transparent;
 }
 #workspaces {
@@ -39,15 +39,14 @@ window#waybar.hidden {
 	color: #eceff4;
 	background: transparent;
 	font-size: 16px;
-	border-radius: 2px;
+	border-radius: 10px;
 }
 
 #workspaces button.active {
 	transition: none;
 	color: #88c0d0;
-	background: #434c5e;
+	
 	font-size: 4px;
-	border-radius: inherit;
 }
 
 #workspaces button.focused {
@@ -62,7 +61,7 @@ window#waybar.hidden {
 	box-shadow: inherit;
 	text-shadow: inherit;
 	background: #4c566a;
-	border-radius: inherit;
+	border-radius: 5px;
    	border-color: #88c0d0;
     	color: #88c0d0;
 }
@@ -81,17 +80,7 @@ window#waybar.hidden {
 	margin-right: 5px;
 }
 
-#connections {
-	margin-top: 6px;
-	margin-left: 8px;
-	padding-left: 10px;
-	padding-right: 10px;
-	margin-bottom: 0px;
-	border-radius: 10px;
-	transition: none;
-	color: #d8dee9;
-	background: #2e3440;
-}
+#connections,
 #wireplumber {
 	margin-top: 6px;
 	margin-left: 8px;
@@ -104,7 +93,6 @@ window#waybar.hidden {
 	background: #2e3440;
 }
 
-
 @keyframes blink {
     to {
         background-color: #BF616A;
@@ -112,36 +100,13 @@ window#waybar.hidden {
     }
 }
 
-
 #clock {
 	margin-top: 6px;
 	margin-left: 8px;
+	margin-right: 20px;
 	padding-left: 10px;
 	padding-right: 10px;
 	margin-bottom: 0px;
-	border-radius: 10px;
-	transition: none;
-	color: #d8dee9;
-	background: #2e3440;
-}
-
-#memory {
-	margin-top: 6px;
-	margin-left: 8px;
-	padding-left: 10px;
-	margin-bottom: 0px;
-	padding-right: 10px;
-	border-radius: 10px;
-	transition: none;
-	color: #d8dee9;
-	background: #2e3440;
-}
-#cpu {
-	margin-top: 6px;
-	margin-left: 8px;
-	padding-left: 10px;
-	margin-bottom: 0px;
-	padding-right: 10px;
 	border-radius: 10px;
 	transition: none;
 	color: #d8dee9;
@@ -156,14 +121,14 @@ window#waybar.hidden {
 	padding-right: 10px;
 	border-radius: 10px;
 	transition: none;
-	color: #B5E8E0;
+	color: #d8dee9;
 	background: #2e3440;
 }
 
 #custom-launcher {
 	font-size: 24px;
 	margin-top: 6px;
-	margin-left: 8px;
+	margin-left: 20px;
 	padding-left: 10px;
 	padding-right: 5px;
 	border-radius: 10px;
@@ -171,32 +136,3 @@ window#waybar.hidden {
 	color: #5e81ac;
 	background: #2e3440;
 }
-
-#custom-wallpaper {
-	margin-top: 6px;
-	margin-left: 8px;
-	padding-left: 10px;
-	padding-right: 10px;
-	margin-bottom: 0px;
-	border-radius: 10px;
-	transition: none;
-	color: #d8dee9;
-	background: #2e3440;
-}
-
-#custom-power {
-	font-size: 20px;
-	margin-top: 6px;
-	margin-left: 8px;
-	margin-right: 8px;
-	padding-left: 10px;
-	padding-right: 5px;
-	margin-bottom: 0px;
-	border-radius: 10px;
-	transition: none;
-	color: #d8dee9;
-	background: #2e3440;
-}
-
-
-
